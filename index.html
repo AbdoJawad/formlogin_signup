@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Login Page</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container login-form">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button class="login" type="button">Login</button>
+        <h4 type="button" onclick="showSignup()">SignUp</h4>
+      </form>
+    </div>
+
+    <div class="form-container signup-form">
+      
+      <h2>Signup</h2>
+      <form>
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required>
+        <label for="newUsername">Email:</label>
+        <input type="email" id="newUsername" name="newUsername" required>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+        <button class="signup" type="button">SignUp</button>
+        <h4 type="button" onclick="showLogin()">Login</h4>
+      </form>
+    </div>
+  </div>
+
+<script src="/main.js"></script>
+
+</body>
+</html>
+
